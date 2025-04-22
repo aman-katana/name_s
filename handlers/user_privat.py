@@ -41,8 +41,8 @@ async def addresses(message: types.Message):
 # @user_router.message(F.text.lower().endswith("?"))
 # @user_router.message(F.text.lower().startswith('как'), F.text.lower().endswith("?"))
 # @user_router.message(F.text.lower().contains('цен') | F.text.lower().contains('стоимост'))
-@user_router.message(F.text)
-async def echo(message: types.Message):
-    await message.answer("Сработал магический фильтр")
-    # user_text = message.text
-    # await message.answer(user_text)
+# @user_router.message(F.text)
+# async def echo(message: types.Message):
+#     await message.answer("Сработал магический фильтр")
+#     user_text = message.text
+#     await message.answer(user_text)
