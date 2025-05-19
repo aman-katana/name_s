@@ -1,5 +1,5 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from aiogram.types import InlineKeyboardButton
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 def addresses_kb():
@@ -13,3 +13,12 @@ def addresses_kb():
 
     return builder.as_markup()
 
+
+links_kb = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text='Сайт', url='https://yellowclub.by/online/'),
+            InlineKeyboardButton(text="Телеграм", url='tg://resolve?domain=Python_Yellow_Club')
+        ]
+    ]
+)
